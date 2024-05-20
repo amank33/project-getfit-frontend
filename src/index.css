@@ -1,0 +1,469 @@
+/* lognav.jsx user*/
+
+.div-imgNavbar {
+  position: relative;
+}
+.user-img-button-nav {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.25rem;
+  border-radius: 9999px;
+}
+.user-img-nav {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+.lognav-item {
+  text-decoration-line: none;
+  cursor: pointer;
+  color: #ffff !important;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.lognav-item:hover {
+  text-decoration: underline;
+}
+.imgOpen-nav {
+  background-color: black;
+  position: absolute;
+  right: 0%;
+  border: solid white;
+  transition-duration: 200ms;
+  width: 15rem;
+  cursor: pointer;
+}
+.imgOpen-wrapper {
+  position: absolute;
+  right: 0%;
+  z-index: 10;
+}
+.imgOpen-links {
+  display: block;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  opacity: 0.75;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration-line: none;
+}
+.imgOpen-links:hover {
+  color: white;
+  background-color: black;
+  text-decoration-line: underline;
+  opacity: 1;
+}
+
+.span-logout {
+  position: absolute;
+  border-top-width: 1px;
+  width: 100%;
+  background-color: black;
+}
+.signOut-button {
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+}
+.signOut-button:hover {
+  color: #0ef !important;
+}
+.signOut-h1 {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  /* color: #fff; */
+}
+/* 
+.signOut-p {
+  color: #fff;
+} */
+/* inputBox.jsx */
+
+.input-box-div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-box {
+  width: 100%;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #fff;
+  padding-left: 3rem;
+  border: 1px solid black;
+}
+
+.input-box:focus {
+  background-color: #fff;
+}
+
+.input-box::placeholder {
+  color: black;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  cursor: pointer;
+  right: 1rem;
+  transform: translateY(-50%);
+  /* color: black;
+  font-size: 1.5rem; */
+}
+.mailLogo {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  cursor: pointer;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: black;
+  height: 15px;
+  width: 15px;
+}
+.icons-signForm {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  cursor: pointer;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: black;
+  height: 15px;
+  width: 15px;
+}
+
+/* userAuth.jsx */
+.user-auth-div-parent {
+  /* position:relative; */
+}
+
+.user-auth-div {
+  /* position:absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);  */
+  margin-top: 16%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh-80px);
+}
+
+.userAuth-form {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding:2rem;
+border-radius:10px;
+background-color:#fff;
+box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+.userAuth-form-h1 {
+  margin-bottom: 5.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Gelasio", serif;
+  font-size: 38px;
+}
+
+.handleSubmit-sign-button {
+  display: inline-block;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 8px;
+  /* margin-left: 37%; */
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.handleSubmit-sign-button:hover {
+  background-color: black;
+  color: white;
+}
+.hr-div {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+.hr-div p {
+  color: #fff;
+}
+.hr {
+  width: 50%;
+  border-color: #fff;
+}
+
+.googleAuth-btn {
+  width: 90%;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: 700; */
+  color: black;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.googleAuth-btn img {
+  width: 20px;
+  /* height:15px; */
+}
+.googleAuth-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* for sign in sign up */
+.action-btn-p {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.action-btn-p-link {
+  text-decoration-line: underline;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  margin: auto;
+  margin-left: 5px;
+}
+
+/* .googleAuth-btn:hover{
+  background-color: #fff;
+  color: black;
+}
+
+
+/* for user */
+
+/* bmi form */
+
+.bmi-container {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20vh;
+  /* width: 300px; */
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.bmi-container-title {
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.bmi-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.form-grouping {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 40px;
+}
+.bmi-container .form-group {
+  /* margin-bottom: 20px; */
+}
+
+.bmi-container-label {
+  margin-bottom: 9px;
+  display: block;
+  font-size: 13px;
+}
+
+.bmi-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.bmi-container select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.bmi-container button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bmi-container button:hover {
+  background-color: #0056b3;
+}
+
+.bmi-result {
+  margin-top: 20px;
+}
+
+.bmi-result h2 {
+  margin-bottom: 10px;
+}
+
+/* for employee card */
+
+.employee-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.employee-card .avatar {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.employee-card .avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.employee-card .info {
+  padding: 20px;
+}
+
+.employee-card .info h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.employee-card .info p {
+  margin: 10px 0;
+  color: #777;
+}
+
+.employee-card .details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.employee-card .detail-item {
+  text-align: center;
+}
+
+.employee-card .detail-title {
+  display: block;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.employee-card .detail-value {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* pdf */
+.pdf-page {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pdf-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+.bmi-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pdf-div {
+  /* margin-top: 20%; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 640px) {
+  .pdf-card-container {
+    flex-direction: column;
+  }
+}
